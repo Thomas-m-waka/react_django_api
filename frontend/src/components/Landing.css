@@ -1,0 +1,78 @@
+/* Landing Page Styles */
+
+.landing-bg {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.landing-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: rgba(213, 214, 182, 0.8); /* #D5D6B6 with opacity */
+    padding: 40px; /* container size */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.landing-container h1,
+.landing-container p {
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #89735C;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #D5D6B6;
+}
+
+/* Discount button styles */
+.discount-button {
+    position: absolute;
+    top: 80%; /* Adjusted position */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 90;
+    background-color: #89735C;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.discount-button:hover {
+    background-color: #D5D6B6;
+}
+
+/* Animation for discount button */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .landing-container {
+        padding: 30px; /* Adjust padding for smaller screens */
+    }
+
+    .cta-button {
+        margin-top: 20px; /* Add some space between CTA button and content */
+    }
+}

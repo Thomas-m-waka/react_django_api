@@ -1,0 +1,9 @@
+
+*.sqlite
+*.sqlite3
+
+
+myenv/
+
+
+.env
